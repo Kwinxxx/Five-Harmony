@@ -9,9 +9,144 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+
   <title>Пять Гармонии</title>
 </head>
 <body>
+  <main class="main">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
 
+          <div class="header-company-wrapper">
+            <a href="#" class="header__logo">
+              <img src="./assets/images/logo.png" alt="#">
+              <div class="header__logo__name">пять<br>гармоний</div>
+            </a>
+            <ul class="header__nav">
+              <li><a href="#" class="header__nav__item">Для меня</a></li>
+              <li><a href="#" class="header__nav__item">Для бизнеса</a></li>
+              <li><a href="#" class="header__nav__item">Кейсы</a></li>
+            </ul>
+          </div>
+
+          <div class="header-info-wrapper">
+            <div class="header-info__lang">
+              <span class="header-lang__text">EN</span>
+              <img src="./assets/images/arrow-down.png" alt="arrow" class="header-lang__arrow">
+            </div>
+
+            <div class="header-info__phone">+7 (499) 553-02-90</div>
+
+            <div class="header-info__contacts">
+              <div class="header-social">
+                <a href="#" class="header-social__item">
+                  <img src="/assets/images/telegram.png" alt="img">
+                </a>
+                <a href="#" class="header-social__item">
+                  <img src="/assets/images/vk.png" alt="img">
+                </a>
+                <button class="btn btn-bid btn-bid__header"><span>Оставить заявку</span> <img src="/assets/images/arrow.png" alt="img" class="btn-arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <section class="machines-wrapper">
+        <div class="machines__title">станки в наличии</div>
+        <div class="swiper myswiper">
+          <div class="swiper-wrapper machines-list__wrapper">
+            <div class="swiper-slide machine-list__container ">
+              <span class="extra__sale">Скидка 10%</span>
+              <img src="/assets/images/machines/1.png" alt="img" class="machine-list__img">
+
+              <div class="machine-item__describe">
+                <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
+                <ul class="machine-item__describe__info">
+                  <li class="machine-item__describe__characteristics"><span>Ø обработки:</span> 300 - 800 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Мощность:</span> 5,5 - 30 кВт</li>
+                  <li class="machine-item__describe__characteristics"><span>РМЦ:</span> 500 - 4000 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Вес:</span> 1000 - 5300кг</li>
+                </ul>
+              </div>
+              <div class="machine-price__new">4 490 253 ₽<span class="machine-price__old">4 890 253 ₽</span></div>
+              <button class="btn btn-bid-machine">Оставить заявку</button>
+            </div>
+            <div class="swiper-slide machine-list__container ">
+              <span class="extra__new">Новинка</span>
+              <img src="/assets/images/machines/2.png" alt="img" class="machine-list__img">
+
+              <div class="machine-item__describe">
+                <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
+                <ul class="machine-item__describe__info">
+                  <li class="machine-item__describe__characteristics"><span>Ø обработки:</span> 300 - 800 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Мощность:</span> 5,5 - 30 кВт</li>
+                  <li class="machine-item__describe__characteristics"><span>РМЦ:</span> 500 - 4000 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Вес:</span> 1000 - 5300кг</li>
+                </ul>
+              </div>
+              <div class="machine-price__new">Цена по запросу</div>
+              <button class="btn btn-bid-machine">Оставить заявку</button>
+            </div>
+            <div class="swiper-slide machine-list__container ">
+              <img src="/assets/images/machines/3.png" alt="img" class="machine-list__img">
+              <div class="machine-item__describe">
+                <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
+                <ul class="machine-item__describe__info">
+                  <li class="machine-item__describe__characteristics"><span>Ø обработки:</span> 300 - 800 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Мощность:</span> 5,5 - 30 кВт</li>
+                  <li class="machine-item__describe__characteristics"><span>РМЦ:</span> 500 - 4000 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Вес:</span> 1000 - 5300кг</li>
+                </ul>
+              </div>
+              <div class="machine-price__new">Цена по запросу</div>
+              <button class="btn btn-bid-machine">Оставить заявку</button>
+            </div>
+            <div class="swiper-slide machine-list__container ">
+              <img src="/assets/images/machines/4.png" alt="img" class="machine-list__img">
+              <div class="machine-item__describe">
+                <div class="machine-item__describe__title">Горизонтальные обрабатывающие центры KMT KHL</div>
+                <ul class="machine-item__describe__info">
+                  <li class="machine-item__describe__characteristics"><span>Ø обработки:</span> 300 - 800 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Мощность:</span> 5,5 - 30 кВт</li>
+                  <li class="machine-item__describe__characteristics"><span>РМЦ:</span> 500 - 4000 мм</li>
+                  <li class="machine-item__describe__characteristics"><span>Вес:</span> 1000 - 5300кг</li>
+                </ul>
+              </div>
+              <div class="machine-price__new">4 490 253 ₽</div>
+              <button class="btn btn-bid-machine">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+<!--        <div class="slider">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>-->
+      </section>
+      <section class="catalog-wrapper">
+        <div class="catalog-list__name">каталог</div>
+        <div class="catalog-list__info">
+          <div class="catalog-item">
+            <span class="catalog-item__number">01</span>
+            <div class="catalog-item__name">металообработка</div>
+            <div class="catalog-item__amount">127 товара</div>
+            <div class="btn btn-accordion"><img src="/assets/images/arrow-top.png" alt="img"></div>
+          </div>
+          <div class="catalog-item">
+            <span class="catalog-item__number">02</span>
+            <div class="catalog-item__name">тяжелая металообработка</div>
+            <div class="catalog-item__amount">72 товара</div>
+            <div class="btn btn-accordion"><img src="/assets/images/arrow-top.png" alt="img"></div>
+          </div>
+          <button class="btn btn-catalog">Смотреть все</button>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

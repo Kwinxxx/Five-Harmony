@@ -1,0 +1,43 @@
+@import 'assets/css/vars.css';
+@import 'assets/css/header.css';
+@import 'assets/css/machines.css';
+@import 'assets/css/catalog.css';
+
+html {
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  scrollbar-color: var(--color-btn);
+  scrollbar-width: thin;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+a, button, li {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  list-style-type: none;
+}
+
+a, button, li:hover {
+  cursor: pointer;
+}
+
+
+.content {
+  margin-top: calc(var(--logo-sz) + 8vw);
+  margin-inline: var(--margin-container);
+}
+
+.btn {
+  background-color: var(--color-btn);
+  align-items: center;
+  color: var(--color-white);
+}
