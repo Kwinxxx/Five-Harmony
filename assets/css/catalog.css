@@ -16,6 +16,10 @@
   border-radius: 8px;
 }
 
+.btn-catalog:hover {
+  transform: scale(1.01);
+}
+
 .link-catalog {
   font-size: var(--text-primary);
 }
@@ -83,7 +87,6 @@
   border-bottom: 1px solid var(--color-white);
   transform: rotate(-135deg);
   transform-origin: center;
-  transition: .3s;
 }
 
 .catalog-accordion__item[open] > .catalog-accordion__title > .arrow > .arrow-item {

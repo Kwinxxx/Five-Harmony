@@ -17,24 +17,30 @@
   <main class="main">
     <header class="header">
       <div class="container">
+        <!--Header-->
         <div class="header__wrapper">
-
           <div class="header-company-wrapper">
+            <!--Логотип-->
             <a href="#" class="header__logo">
               <img src="./assets/images/logo.png" alt="#">
               <div class="header__logo__name">пять<br>гармоний</div>
             </a>
+            <!--Навигация-->
             <ul class="header__nav">
-              <li><a href="#" class="header__nav__item">Для меня</a></li>
-              <li><a href="#" class="header__nav__item">Для бизнеса</a></li>
-              <li><a href="#" class="header__nav__item">Кейсы</a></li>
+              <li class="header__nav__item"><a href="#" >Для меня</a></li>
+              <li class="header__nav__item"><a href="#" >Для бизнеса</a></li>
+              <li class="header__nav__item"><a href="#" >Кейсы</a></li>
             </ul>
           </div>
 
           <div class="header-info-wrapper">
             <div class="header-info__lang">
-              <span class="header-lang__text">EN</span>
-              <img src="./assets/images/arrow-down.png" alt="arrow" class="header-lang__arrow">
+              <select class="header-lang__select">
+                <option class="header-lang__text">EN</option>
+                <option class="header-lang__text">RU</option>
+                <option class="header-lang__text">JAP</option>
+              </select>
+<!--              <img src="./assets/images/arrow-down.png" alt="arrow" class="header-lang__arrow">-->
             </div>
 
             <div class="header-info__phone">+7 (499) 553-02-90</div>
@@ -61,7 +67,7 @@
           <div class="swiper-wrapper machines-list__wrapper">
             <div class="swiper-slide machine-list__container ">
               <span class="extra__sale">Скидка 10%</span>
-              <img src="/assets/images/machines/1.png" alt="img" class="machine-list__img">
+              <img src="./assets/images/machines/1.png" alt="img" class="machine-list__img">
 
               <div class="machine-item__describe">
                 <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
@@ -73,11 +79,11 @@
                 </ul>
               </div>
               <div class="machine-price__new">4 490 253 ₽<span class="machine-price__old">4 890 253 ₽</span></div>
-              <button class="btn btn-bid-machine">Оставить заявку</button>
+              <label for="modal-toggle" class="btn btn-bid-machine">Оставить заявку</label>
             </div>
             <div class="swiper-slide machine-list__container ">
               <span class="extra__new">Новинка</span>
-              <img src="/assets/images/machines/2.png" alt="img" class="machine-list__img">
+              <img src="./assets/images/machines/2.png" alt="img" class="machine-list__img">
 
               <div class="machine-item__describe">
                 <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
@@ -89,10 +95,10 @@
                 </ul>
               </div>
               <div class="machine-price__new">Цена по запросу</div>
-              <button class="btn btn-bid-machine">Оставить заявку</button>
+              <label for="modal-toggle" class="btn btn-bid-machine">Оставить заявку</label>
             </div>
             <div class="swiper-slide machine-list__container ">
-              <img src="/assets/images/machines/3.png" alt="img" class="machine-list__img">
+              <img src="./assets/images/machines/3.png" alt="img" class="machine-list__img">
               <div class="machine-item__describe">
                 <div class="machine-item__describe__title">Горизонтальные обрабатывающие<br>центры KMT KHL</div>
                 <ul class="machine-item__describe__info">
@@ -103,10 +109,10 @@
                 </ul>
               </div>
               <div class="machine-price__new">Цена по запросу</div>
-              <button class="btn btn-bid-machine">Оставить заявку</button>
+              <label for="modal-toggle" class="btn btn-bid-machine">Оставить заявку</label>
             </div>
             <div class="swiper-slide machine-list__container ">
-              <img src="/assets/images/machines/4.png" alt="img" class="machine-list__img">
+              <img src="./assets/images/machines/4.png" alt="img" class="machine-list__img">
               <div class="machine-item__describe">
                 <div class="machine-item__describe__title">Горизонтальные обрабатывающие центры KMT KHL</div>
                 <ul class="machine-item__describe__info">
@@ -117,7 +123,7 @@
                 </ul>
               </div>
               <div class="machine-price__new">4 490 253 ₽</div>
-              <button class="btn btn-bid-machine">Оставить заявку</button>
+              <label for="modal-toggle" class="btn btn-bid-machine">Оставить заявку</label>
             </div>
           </div>
         </div>
@@ -164,6 +170,253 @@
           <button class="btn btn-catalog">Смотреть все</button>
         </div>
       </section>
+      <section class="parameters-wrapper">
+        <!--Управалние вкладками-->
+        <input type="radio" name="tabs" id="tab1" class="parameters-input" checked>
+        <input type="radio" name="tabs" id="tab2" class="parameters-input">
+        <input type="radio" name="tabs" id="tab3" class="parameters-input">
+
+        <!--Заголовки вкладок-->
+        <div class="parameters-header">
+          <label for="tab1" class="parameter-label">Отличительные особенности</label>
+          <label for="tab2" class="parameter-label">Технические характеристики</label>
+          <label for="tab3" class="parameter-label">Доставка</label>
+        </div>
+        <!--Контент вкладок -->
+        <div class="parameters-content">
+          <!--Контент вкладки 1-->
+          <div class="parameters-panel">
+            <!--Описание-->
+            <div class="parameters-panel-description">
+              <h4>назначение</h4>
+              <p class="parameters-panel__p">Фрезерный обрабатывающий центр IRONMAC IMU-5X 300 предназначен для высокоточной* обработки корпусных деталей, заготовок типа тел вращения с пяти сторон за один установ с максимальной производительностью** до 550 см3/мин. На оборудовании возможно обрабатывать сталь, алюминий, жаропрочные и нержавеющие сплавы.</p>
+              <div class="parameters-panel__add">* Высокоточная обработка соответствует классу точности В (соотношение основных допусков станка до 0,004 мм).</div>
+            </div>
+
+            <!--Информация-->
+            <div class="parameters-panel-info">
+              <h4>область применения</h4>
+              <ul class="parameters-panel-info__list">
+                <li class="parameters-panel-info__list__item">машиностроение</li>
+                <li class="parameters-panel-info__list__item">производство инструментов и пресс-форм;</li>
+                <li class="parameters-panel-info__list__item">контрактное изготовление деталей;</li>
+                <li class="parameters-panel-info__list__item">пищевая промышленность;</li>
+                <li class="parameters-panel-info__list__item">агротехническое машиностроение;</li>
+              </ul>
+            </div>
+
+            <!--Характеристики-->
+            <ul class="parameters-panel-characteristics">
+              <h4>шпиндель</h4>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Тип</span>
+                <span class="parameters-panel-characteristics__item_-value">Прямой привод AFMING</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Конус</span>
+                <span class="parameters-panel-characteristics__item_-value">HSK-A63</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Частота вращения шпинделя, об/мин</span>
+                <span class="parameters-panel-characteristics__item_-value">20 000</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Крутящий момент шпинделя, Нм</span>
+                <span class="parameters-panel-characteristics__item_-value">35/42</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+            </ul>
+          </div>
+          <!--Контент вкладки 2-->
+          <div class="parameters-panel">
+            <!--Описание-->
+            <div class="parameters-panel-description">
+              <h4>назначение</h4>
+              <p class="parameters-panel__p">Фрезерный обрабатывающий центр IRONMAC IMU-5X 300 предназначен для высокоточной* обработки корпусных деталей, заготовок типа тел вращения с пяти сторон за один установ с максимальной производительностью** до 550 см3/мин. На оборудовании возможно обрабатывать сталь, алюминий, жаропрочные и нержавеющие сплавы.</p>
+              <div class="parameters-panel__add">* Высокоточная обработка соответствует классу точности В (соотношение основных допусков станка до 0,004 мм).</div>
+            </div>
+
+            <!--Информация-->
+            <div class="parameters-panel-info">
+              <h4>область применения</h4>
+              <ul class="parameters-panel-info__list">
+                <li class="parameters-panel-info__list__item">машиностроение</li>
+                <li class="parameters-panel-info__list__item">производство инструментов и пресс-форм;</li>
+                <li class="parameters-panel-info__list__item">контрактное изготовление деталей;</li>
+                <li class="parameters-panel-info__list__item">пищевая промышленность;</li>
+                <li class="parameters-panel-info__list__item">агротехническое машиностроение;</li>
+              </ul>
+            </div>
+
+            <!--Характеристики-->
+            <ul class="parameters-panel-characteristics">
+              <h4>шпиндель</h4>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Тип</span>
+                <span class="parameters-panel-characteristics__item_-value">Прямой привод AFMING</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Конус</span>
+                <span class="parameters-panel-characteristics__item_-value">HSK-A63</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Частота вращения шпинделя, об/мин</span>
+                <span class="parameters-panel-characteristics__item_-value">20 000</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Крутящий момент шпинделя, Нм</span>
+                <span class="parameters-panel-characteristics__item_-value">35/42</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+            </ul>
+          </div>
+          <!--Контент вкладки 3-->
+          <div class="parameters-panel">
+            <!--Описание-->
+            <div class="parameters-panel-description">
+              <h4>назначение</h4>
+              <p class="parameters-panel__p">Фрезерный обрабатывающий центр IRONMAC IMU-5X 300 предназначен для высокоточной* обработки корпусных деталей, заготовок типа тел вращения с пяти сторон за один установ с максимальной производительностью** до 550 см3/мин. На оборудовании возможно обрабатывать сталь, алюминий, жаропрочные и нержавеющие сплавы.</p>
+              <div class="parameters-panel__add">* Высокоточная обработка соответствует классу точности В (соотношение основных допусков станка до 0,004 мм).</div>
+            </div>
+
+            <!--Информация-->
+            <div class="parameters-panel-info">
+              <h4>область применения</h4>
+              <ul class="parameters-panel-info__list">
+                <li class="parameters-panel-info__list__item">машиностроение</li>
+                <li class="parameters-panel-info__list__item">производство инструментов и пресс-форм;</li>
+                <li class="parameters-panel-info__list__item">контрактное изготовление деталей;</li>
+                <li class="parameters-panel-info__list__item">пищевая промышленность;</li>
+                <li class="parameters-panel-info__list__item">агротехническое машиностроение;</li>
+              </ul>
+            </div>
+
+            <!--Характеристики-->
+            <ul class="parameters-panel-characteristics">
+              <h4>шпиндель</h4>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Тип</span>
+                <span class="parameters-panel-characteristics__item_-value">Прямой привод AFMING</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Конус</span>
+                <span class="parameters-panel-characteristics__item_-value">HSK-A63</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Частота вращения шпинделя, об/мин</span>
+                <span class="parameters-panel-characteristics__item_-value">20 000</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Крутящий момент шпинделя, Нм</span>
+                <span class="parameters-panel-characteristics__item_-value">35/42</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+              <li>
+                <span class="parameters-panel-characteristics__item__label">Мощность шпинделя (S1 / S6 - 40%), кВт</span>
+                <span class="parameters-panel-characteristics__item_-value">2024</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <input type="checkbox" id="modal-toggle" class="modal-toggle">
+      <div class="modal-overlay">
+        <label for="modal-toggle" class="modal-overlay-clickable"></label>
+
+        <div class="modal">
+
+          <label for="modal-toggle" class="modal-close"></label>
+
+          <div class="modal-header">
+            <h3>заказать программу</h3>
+            <p>Оставьте заявку и мы свяжемся с вами  в ближайшее время!</p>
+          </div>
+
+        <!--Модалка-->
+          <form action="" class="modal-form">
+
+            <div class="form-group">
+              <input type="text" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <label for="input-number" class="form-label">Номер телефона</label>
+              <input type="text" id="input-number" placeholder="8 999 103 87 87">
+            </div>
+            <div class="form-group">
+              <label for="input-email" class="form-label">Email</label>
+              <input type="email" id="input-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="input-company" class="form-label">Компания</label>
+              <input type="text" id="input-company" placeholder="Компания">
+            </div>
+            <div class="form-group">
+              <label for="input-comment" class="form-label">Коментарий</label>
+              <textarea id="input-comment" placeholder="Коментарий"></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Отправить</button>
+            <div class="agreement-wrapper">
+              <input type="checkbox" for="input-agree">
+              <a href="#" target="_blank" id="input-agree">Нажимая кнопку «Отправить», Вы соглашаетесь с <span class="agree-underline">политикой обработки персональных данных</span></a>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>

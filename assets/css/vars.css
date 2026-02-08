@@ -1,22 +1,22 @@
 @import '../../style.css';
 
 :root {
-  --font-primary:      16px;
-
   --color-btn:                   #299F5A;
   --color-black:                 #000000;
   --color-white:                 #ffffff;
   --color-secondary:             #959595;
   --color-border:                #D9D9D9;
+  --color-border-bg:             #F6F6F6;
   --color-text-primary:          #1e1e1e;
   --color-text-secondary:        #262626;
-  --color-border-bg:             #F6F6F6;
   --color-item-bg:               #F4F4F4;
   --color-sale:                  #FFD500;
   --color-new:                   #34AADF;
+  --color-mandatory:             #C72D2D;
 
   --logo-sz:                       1.4vw;
   --margin-container:                8vw;
 
   --text-primary:                  0.8vw;
+  --modal-bg:                  #262626AB;
 }

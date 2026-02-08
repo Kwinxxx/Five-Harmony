@@ -83,6 +83,12 @@
   font-size: var(--text-primary);
   padding: 1.2vw;
   border-radius: 8px;
+  text-align: center;
+}
+
+.btn-bid-machine:hover {
+  font-weight: 600;
+  transform: scale(1.01);
 }
 
 /*.slider {

@@ -1,1 +1,137 @@
 @import "vars.css";
+
+.parameters-wrapper {
+  padding: 1.2vw;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  margin-top: 96px;
+  overflow: hidden;
+}
+
+.parameters-input {
+  display: none;
+}
+
+.parameters-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  justify-content: space-around;
+  padding-bottom: 1.2vw;
+}
+
+/*Ползунок*/
+.parameters-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100%/ 3);
+  height: 2px;
+  background: var(--color-btn);
+  transition: transform 0.3s ease;
+}
+
+  /* Перемещение ползунка */
+#tab1:checked ~ .parameters-header::after {
+  transform: translateX(0);
+}
+
+#tab2:checked ~ .parameters-header::after {
+  transform: translateX(100%);
+}
+
+#tab3:checked ~ .parameters-header::after {
+  transform: translateX(200%);
+}
+
+.parameter-label {
+  color: var(--color-secondary);
+  font-size: var(--text-primary);
+  transition: .3s color ease;
+  user-select: none;
+}
+
+/*Активная вкладка*/
+#tab1:checked ~ .parameters-header .parameter-label[for="tab1"],
+#tab2:checked ~ .parameters-header .parameter-label[for="tab2"],
+#tab3:checked ~ .parameters-header .parameter-label[for="tab3"] {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/*Контент*/
+
+.parameters-content {
+  margin-top: 1.6vw;
+  width: 60%;
+}
+
+.parameters-panel-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  margin-bottom: 1.6vw;
+}
+
+.parameters-panel__title {
+  text-transform: uppercase;
+}
+
+.parameters-panel__p {
+  font-size: var(--text-primary);
+  color: var(--color-secondary);
+}
+
+.parameters-panel__add {
+  font-size: var(--text-primary);
+}
+
+
+.parameters-panel-info > h4 {
+  margin-bottom: 0.8vw;
+}
+
+.parameters-panel-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+}
+
+.parameters-panel-info__list__item {
+  list-style-type: disc;
+  margin-left: 1vw;
+  color: var(--color-secondary);
+  font-size: var(--text-primary);
+}
+
+.parameters-panel-characteristics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6vw;
+}
+
+
+.parameters-panel-characteristics > h4 {
+  padding: 0.8vw 0;
+  border-top: 1px solid var(--color-border);
+  font-weight: 500;
+}
+
+.parameters-panel-characteristics > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8vw 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.parameters-panel-characteristics > li > span {
+  width: 50%;
+  font-size: var(--text-primary);
+}
+
+.parameters-panel-characteristics__item__label {
+  color: var(--color-secondary);
+}
