@@ -9,11 +9,8 @@
       <change beforePath="$PROJECT_DIR$/assets/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/catalog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/machines.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/machines.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/parameters.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/parameters.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/vars.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/vars.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/burger.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/burger.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <updated>1770464962110</updated>
       <workItem from="1770464963406" duration="27547000" />
       <workItem from="1770492828512" duration="7578000" />
-      <workItem from="1770534232532" duration="34356000" />
+      <workItem from="1770534232532" duration="35992000" />
     </task>
     <servers />
   </component>

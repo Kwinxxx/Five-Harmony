@@ -193,6 +193,10 @@
     display: block;
   }
 
+  .header__wrapper {
+    padding: 5px 30px;
+  }
+
   .header__logo > img {
     margin-right: 1rem;
     width: 50px;

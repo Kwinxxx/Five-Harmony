@@ -218,7 +218,8 @@ a, button, li:hover, label {
   }
 
   .btn-submit {
-    padding: 16px 24px;
+    padding: var(--media-btn-padding-block) var(--media-btn-padding-inline);
+    font-size: var(--media-text-p);
   }
 
 }
