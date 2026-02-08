@@ -2,6 +2,7 @@
 @import 'assets/css/header.css';
 @import 'assets/css/machines.css';
 @import 'assets/css/catalog.css';
+@import 'assets/css/catalog.css';
 
 html {
   font-family: 'inter', sans-serif;
@@ -40,4 +41,8 @@ a, button, li:hover {
   background-color: var(--color-btn);
   align-items: center;
   color: var(--color-white);
+}
+
+.link {
+  color: var(--color-btn);
 }

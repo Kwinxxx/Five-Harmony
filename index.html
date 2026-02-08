@@ -41,13 +41,13 @@
 
             <div class="header-info__contacts">
               <div class="header-social">
-                <a href="#" class="header-social__item">
-                  <img src="/assets/images/telegram.png" alt="img">
+                <a href="#" >
+                  <img src="/assets/images/telegram.png" alt="img" class="header-social__item">
                 </a>
-                <a href="#" class="header-social__item">
-                  <img src="/assets/images/vk.png" alt="img">
+                <a href="#">
+                  <img src="/assets/images/vk.png" alt="img" class="header-social__item">
                 </a>
-                <button class="btn btn-bid btn-bid__header"><span>Оставить заявку</span> <img src="/assets/images/arrow.png" alt="img" class="btn-arrow"></button>
+                <button class="btn btn-bid btn-bid__header">Оставить заявку<img src="/assets/images/arrow.png" alt="img" class="btn-arrow"></button>
               </div>
             </div>
           </div>
@@ -129,19 +129,38 @@
       </section>
       <section class="catalog-wrapper">
         <div class="catalog-list__name">каталог</div>
-        <div class="catalog-list__info">
-          <div class="catalog-item">
-            <span class="catalog-item__number">01</span>
-            <div class="catalog-item__name">металообработка</div>
-            <div class="catalog-item__amount">127 товара</div>
-            <div class="btn btn-accordion"><img src="/assets/images/arrow-top.png" alt="img"></div>
-          </div>
-          <div class="catalog-item">
-            <span class="catalog-item__number">02</span>
-            <div class="catalog-item__name">тяжелая металообработка</div>
-            <div class="catalog-item__amount">72 товара</div>
-            <div class="btn btn-accordion"><img src="/assets/images/arrow-top.png" alt="img"></div>
-          </div>
+        <div class="catalog-accordion__wrapper">
+
+          <details class="catalog-accordion__item" name="catalog">
+            <summary class="catalog-accordion__title">
+              <span class="catalog-accordion__number">01</span>
+              <div class="catalog-accordion__name">металообработка</div>
+              <div class="catalog-accordion__amount">127 товара</div>
+              <div class="arrow">
+                <div class="arrow-item"></div>
+              </div>
+            </summary>
+            <div class="catalog-accordion__content">
+              <p class="catalog-accordion__content__description">Деревообрабатывающие станки — это специализированное оборудование, предназначенное для обработки древесины и создания различных изделий, таких как мебель, двери, окна и другие элементы интерьера.</p>
+              <a href="" class="link link-catalog">Перейти в каталог</a>
+            </div>
+          </details>
+
+          <details class="catalog-accordion__item" name="catalog">
+            <summary class="catalog-accordion__title">
+              <span class="catalog-accordion__number">02</span>
+              <div class="catalog-accordion__name">тяжелая металообработка</div>
+              <div class="catalog-accordion__amount">72 товара</div>
+              <div class="arrow">
+                <div class="arrow-item"></div>
+              </div>
+            </summary>
+            <div class="catalog-accordion__content">
+              <p class="catalog-accordion__content__description">Деревообрабатывающие станки — это специализированное оборудование, предназначенное для обработки древесины и создания различных изделий, таких как мебель, двери, окна и другие элементы интерьера.</p>
+              <a href="" class="link link-catalog">Перейти в каталог</a>
+            </div>
+          </details>
+
           <button class="btn btn-catalog">Смотреть все</button>
         </div>
       </section>

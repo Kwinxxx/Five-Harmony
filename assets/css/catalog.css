@@ -10,12 +10,23 @@
   text-transform: uppercase;
 }
 
-.catalog-list__info {
+.btn-catalog {
+  font-size: var(--text-primary);
+  padding: 0.8vw;
+  border-radius: 8px;
+}
+
+.link-catalog {
+  font-size: var(--text-primary);
+}
+
+/*ACCORDION*/
+.catalog-accordion__wrapper{
   display: flex;
   flex-direction: column;
 }
 
-.catalog-item {
+.catalog-accordion__title {
   border-top: 1px solid var(--color-border);
   display: flex;
   gap: 2vw;
@@ -23,39 +34,67 @@
   align-items: center;
 }
 
-.catalog-item__number {
+.catalog-accordion__number {
   font-size: 0.8vw;
   color: var(--color-text-primary);
 }
 
-.catalog-item__name {
+.catalog-accordion__name {
   font-size: 1vw;
   color: var(--color-text-primary);
   text-transform: uppercase;
   width: 100%;
 }
 
-.catalog-item__amount {
+.catalog-accordion__amount {
   font-size: 0.8vw;
   color: var(--color-secondary);
   width: 100%;
 }
 
-.btn-accordion {
-  text-align: center;
-  padding: 0.5vw 0.5vw;
-  border-radius: 8px;
+.catalog-accordion__content {
+  padding: 0.8vw 2.3vw 2.6vw 2.3vw;
 }
 
-.btn-accordion > img {
+.catalog-accordion__content__description {
+  font-size: var(--text-primary);
+  color: var(--color-secondary);
+  width: 45%;
+  overflow-wrap: break-word;
+  margin-bottom: 0.6vw;
+}
+
+
+.arrow {
   position: relative;
-  top: -0.1vw;
-  max-width: 0.8vw;
-  max-height: 0.5vw;
+  background-color: var(--color-btn);
+  padding: 0.8vw;
+  border-radius: 0.3vw;
+}
+.arrow-item {
+  position: absolute;
+  top: 0.7vw;
+  right: 0.6vw;
+  content: "";
+  display: block;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-right: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  transform: rotate(-135deg);
+  transform-origin: center;
+  transition: .3s;
 }
 
-.btn-catalog {
-  font-size: 0.8vw;
-  padding: 0.8vw;
-  border-radius: 8px;
+.catalog-accordion__item[open] > .catalog-accordion__title > .arrow > .arrow-item {
+  transform: rotate(45deg);
+  top: 0.5vw;
+  border-right: 1px solid var(--color-btn);
+  border-bottom: 1px solid var(--color-btn);
 }
+
+.catalog-accordion__item[open] > .catalog-accordion__title > .arrow {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+
