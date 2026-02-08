@@ -172,4 +172,8 @@
   .parameters-content {
     width: 100%;
   }
+
+  .parameters-panel-info__list {
+    padding-left: 12px;
+  }
 }
