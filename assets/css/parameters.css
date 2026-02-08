@@ -135,3 +135,41 @@
 .parameters-panel-characteristics__item__label {
   color: var(--color-secondary);
 }
+
+@media (max-width: 768px) {
+  .parameters-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .parameters-wrapper {
+    padding: 10px;
+  }
+
+  .parameter-label {
+    text-align: center;
+    font-size: var(--media-text-title);
+  }
+
+  .parameters-panel-description > h4, .parameters-panel-info > h4, .parameters-panel-characteristics > h4 {
+    font-size: var(--media-text-primary);
+  }
+
+  .parameters-panel__p , .parameters-panel__add , .parameters-panel-info__list__item, .parameters-panel-characteristics > li > span{
+    font-size: var(--media-text-p);
+  }
+
+  .parameters-panel-characteristics, .parameters-panel-characteristics > li {
+    padding: 16px 0;
+  }
+
+  .parameters-panel-description {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .parameters-content {
+    width: 100%;
+  }
+}

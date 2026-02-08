@@ -5,8 +5,8 @@
 }
 
 .machines-list__wrapper{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1vw;
   transform: translate3d(0px, 0px, 0px);
   transition-duration: 0ms;
@@ -116,4 +116,58 @@
   border-radius: 4px;
 
   font-size: 0.7vw;
+}
+
+@media (max-width: 768px) {
+  .machine-item__describe__title {
+    font-size: var(--media-text-primary);
+  }
+
+  .machine-item__describe__characteristics, .machine-item__describe__characteristics > span, .machine-price__new, .machine-price__old {
+    font-size: 14px;
+  }
+
+  .list-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .machines-list__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .machines__title {
+    font-size: 20px;
+  }
+
+  .machine-list__container {
+    width: auto !important;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .machine-list__img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .extra__sale, .extra__new {
+    padding: 8px 16px;
+    font-size: var(--media-text-primary);
+  }
+
+  .btn-bid-machine {
+    padding: 16px 32px;
+    font-size: var(--media-text-primary);
+    width: 100%;
+  }
 }

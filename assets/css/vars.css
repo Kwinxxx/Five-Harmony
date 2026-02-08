@@ -19,4 +19,8 @@
 
   --text-primary:                  0.8vw;
   --modal-bg:                  #262626AB;
+
+  --media-text-primary:             1.2rem;
+  --media-text-title:               2rem;
+  --media-text-p:                 0.7rem;
 }
