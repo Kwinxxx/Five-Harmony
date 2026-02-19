@@ -1,16 +1,23 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-const swiper = new Swiper('.myswiper', {
+
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 20,
+  speed: 200,
+  slidesPerView: 'auto',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    addIcons: false,
   },
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  scrollbar : {
+    el : '.swiper-scrollbar',
+   draggable: true,
+  }
 
-  slidesPerView: 4,
-  spaceBetween: 30
+  breakpoint {
+    768 : {
+      spaceBetween: 10,
+      slidesPerView: 1
+    }
+  }
 });
